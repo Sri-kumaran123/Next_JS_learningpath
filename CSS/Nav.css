@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+nav{
+    background-color: blue;
+   
+    height: 6vh;
+    padding-top: 10px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    color: white;
+    
+}
+nav .Left,nav .right{
+    padding: 0 10px;
+}
+nav .Left{
+    flex-grow: 2;
+   /* background-color: red;*/
+   
+    
+}
+nav .right{
+   flex-grow: 3;
+    /* background-color: green; */
+    
+}
+ul{
+    float: right;
+}
+nav .right ul li{
+    float: left;
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+li:hover{
+    font-size: 20px;
+    padding: 0 30px;
+    transition: 1s;
+}

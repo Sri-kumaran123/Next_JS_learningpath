@@ -1,5 +1,6 @@
+import { markAssetError } from 'next/dist/client/route-loader'
 import { Inter } from 'next/font/google'
-import './globals.css'
+//import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -9,9 +10,10 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  const style1={margin:0,padding:0};
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className} style={style1}>{children}</body>
     </html>
   )
 }
